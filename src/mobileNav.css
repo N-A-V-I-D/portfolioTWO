@@ -1,0 +1,19 @@
+/* @media only screen and (min-width: 901px) and (max-width: 3440px) {
+    #mobileNav{
+        display: none;
+
+    }
+    
+} */
+#mButt{
+    position: fixed;
+    left: 2px;
+    top: 2px
+}
+#mobileNav{
+    position: fixed;
+}
+#thingy{
+    display: flex;
+    flex-direction: column;
+}
