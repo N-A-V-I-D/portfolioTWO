@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.loading-screen {
+	height: 100vh;
+	width: 100%;
+}
+
+.loading-screen svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 300px;
+	width: 300px;
+}
+
+#skate {
+  offset-path: path('M83.2,16.2v34.7l0,0c0,11.9-11.5,21.5-25.8,21.5h-1H43.1h-1c-14.2,0-25.8-9.6-25.8-21.5l0,0V16.2');
+  offset-rotate: auto;
+  animation: go 2s infinite alternate ease-in-out;
+  transform: rotate(90deg);
+  transform-box: fill-box;
+  transform-origin: left;
+}
+
+@keyframes go {
+  0% {
+    offset-distance: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+	.loading-screen svg {
+		height: 200px;
+		width: 200px;
+	}
+}
